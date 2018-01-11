@@ -1,0 +1,30 @@
+html
+{
+    background-color: #70a0a0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.result
+{
+    font-family: monospace;
+    font-size: 13pt
+}
+
+.left
+{
+    float: left;
+    width: 50%
+}
+
+.right
+{
+    float: right;
+    width: 50%
+}
+
+#main
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}

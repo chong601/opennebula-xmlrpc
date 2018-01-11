@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+        <title>Index - OpenNebula XML-RPC Demo</title>
+        <script src="{{url_for('static', filename='js-xhr.js')}}"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1 style="text-align: center">OpenNebula Python XML-RPC Demo</h1>
+        </div>
+        <div id="main">
+            <div class="left">
+                <div>
+                    <h1>Start VM Demo</h1>
+                    <p>Enter object ID: </p> <input type="text" id="start-objectid" name="start-objectid" size="6" required/>
+                    <button type="button" onclick="startVMXHR()" name="Submit" value="Submit">Submit</button>
+                    <p>Result</p><p class="result" id="start-result">Ready to send</p>
+                </div>
+    
+                <div>
+                    <h1>Stop VM Demo</h1>
+                    <p>Enter object ID: </p> <input type="text" id="stop-objectid" name="stop-objectid" size="6" required/>
+                    <button type="button" onclick="stopVMXHR()" name="Submit" value="Submit">Submit</button>
+                    <p>Result</p><p class="result" id="stop-result">Ready to send</p>
+                </div>
+                
+                <div>
+                    <h1>Status VM Demo</h1>
+                    <p>Enter object ID: </p> <input type="text" id="status-objectid" name="status-objectid" size="6" required/>
+                    <button type="button" onclick="statusVMXHR()" name="Submit" value="Submit">Submit</button>
+                    <p>Result</p><p class="result" id="status-result">Ready to send</p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div>
+                    <h1>All VM Status Demo</h1>
+                    <button type="button" onclick="statusallVMXHR()" name="Submit" value="Submit">Submit</button>
+                    <p>Result</p><p class="result" id="statusall-result">Ready to send</p>
+                </div>
+                
+                <div>
+                    <h1>Create VM Demo</h1>
+                    <p>Enter object ID: </p> <input type="text" id="create-objectid" name="create-objectid" size="6" required/>
+                    <button type="button" onclick="createVMXHR()" name="Submit" value="Submit">Submit</button>
+                    <p>Result</p><p class="result" id="create-result">Ready to send</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
